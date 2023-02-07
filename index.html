@@ -5,13 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flappy Bird</title>
-    <link rel="stylesheet" href="https://fonts.google.com/css?family=Teko:700">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Teko:wght@700&display=swap" rel="stylesheet">
 
     <style>
+        body {
+            min-height: 95vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
         canvas {
             border: 1px solid #000;
             display: block;
             margin: 0 auto;
+        }
+
+        @media screen and (max-width : 420px) {
+            body {
+            min-height: 90vh;
+        }
         }
     </style>
 </head>
